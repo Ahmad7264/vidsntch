@@ -3042,7 +3042,6 @@ body.dark-mode .theme-toggle {
     background 0.3s ease;
 }
 
-
 /* ============================================================
    MOBILE NAV MENU BUTTON
    ============================================================ */
@@ -3061,7 +3060,9 @@ body.dark-mode .theme-toggle {
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
-  box-shadow: inset 2px 2px 5px rgba(180, 155, 60, 0.08), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+  box-shadow:
+    inset 2px 2px 5px rgba(180, 155, 60, 0.08),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.7);
 }
 
 .vs-mobile-menu {
@@ -4994,7 +4995,6 @@ html.vs-dark-mode * {
   }
 }
 
-
 /* Legacy shared-UI variable aliases (kept internal to the single stylesheet). */
 :root {
   --vs-bg: var(--bg);
@@ -5029,7 +5029,11 @@ body {
   color: var(--text);
   background:
     radial-gradient(circle at 0% 0%, rgba(252, 225, 80, 0.32), transparent 28%),
-    radial-gradient(circle at 100% 45%, rgba(249, 204, 0, 0.2), transparent 30%),
+    radial-gradient(
+      circle at 100% 45%,
+      rgba(249, 204, 0, 0.2),
+      transparent 30%
+    ),
     var(--bg);
 }
 
@@ -5156,8 +5160,8 @@ body > .downloader-nav {
   border: 1px solid var(--border) !important;
   border-radius: 24px !important;
   overflow: visible !important;
-  background: rgba(245, 238, 204, 0.90) !important;
-  box-shadow: 0 8px 24px rgba(112, 91, 20, 0.10) !important;
+  background: rgba(245, 238, 204, 0.9) !important;
+  box-shadow: 0 8px 24px rgba(112, 91, 20, 0.1) !important;
 }
 
 html[data-theme="dark"] .site-header.vs-shared-header,
@@ -5221,7 +5225,7 @@ body.vs-dark-mode .site-header.vs-shared-header {
   padding: 7px 8px !important;
   gap: 5px !important;
   border-radius: 11px !important;
-  font-size: clamp(0.70rem, 0.72vw, 0.80rem) !important;
+  font-size: clamp(0.7rem, 0.72vw, 0.8rem) !important;
   font-weight: 700 !important;
   letter-spacing: -0.1px !important;
   white-space: nowrap !important;
@@ -5235,7 +5239,7 @@ body.vs-dark-mode .site-header.vs-shared-header {
 }
 
 .site-header.vs-shared-header .nav-platform:hover {
-  background: rgba(249, 204, 0, 0.10) !important;
+  background: rgba(249, 204, 0, 0.1) !important;
   transform: none !important;
 }
 
@@ -5292,7 +5296,7 @@ body.dark-mode .site-header.vs-shared-header .language-btn {
 html[data-theme="dark"] .site-header.vs-shared-header .language-menu,
 body.dark-mode .site-header.vs-shared-header .language-menu {
   background: #1d1b10 !important;
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.50) !important;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Compact, proper toggle directly below navbar. */
@@ -5370,7 +5374,9 @@ body.dark-mode .site-header.vs-shared-header .language-menu {
   border-radius: 50% !important;
   background: #ffffff !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18) !important;
-  transition: transform 0.22s ease, background 0.22s ease !important;
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease !important;
 }
 
 .vs-theme-knob[data-position="right"] {
@@ -5498,7 +5504,7 @@ body.vs-dark-mode textarea {
   }
 
   .site-header.vs-shared-header .brand {
-    font-size: 1.10rem !important;
+    font-size: 1.1rem !important;
   }
 
   .site-header.vs-shared-header .brand .logo-icon {
@@ -5565,7 +5571,6 @@ body.vs-dark-mode textarea {
     min-height: 52px !important;
   }
 }
-
 
 /* ============================================================
    VIDSNATCH V4 — FINAL SHARED UI OVERRIDES
@@ -5750,7 +5755,7 @@ html[data-theme="dark"] .vs-theme-toggle {
 
 body.vs-dark-mode .vs-theme-icon,
 html[data-theme="dark"] .vs-theme-icon {
-  background: rgba(249, 204, 0, 0.10) !important;
+  background: rgba(249, 204, 0, 0.1) !important;
 }
 
 body.vs-dark-mode .vs-theme-track,
@@ -5823,7 +5828,7 @@ body.vs-dark-mode .fetch-btn,
 html[data-theme="dark"] .downloader-fetch,
 html.vs-dark-mode .downloader-fetch,
 body.vs-dark-mode .downloader-fetch {
-  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.30) !important;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* ============================================================
@@ -5860,7 +5865,7 @@ body.vs-dark-mode .downloader-fetch {
 }
 
 .downloader-input:focus {
-  box-shadow: 0 0 0 3px rgba(249, 204, 0, 0.10) !important;
+  box-shadow: 0 0 0 3px rgba(249, 204, 0, 0.1) !important;
 }
 
 .downloader-fetch {
@@ -5964,7 +5969,6 @@ html.vs-dark-mode .downloader-form {
   }
 }
 
-
 /* V4 home hero: keep the first line independent from the accent line. */
 .hero-section h1 .hero-title-main {
   display: block !important;
@@ -5991,150 +5995,412 @@ html.vs-dark-mode .downloader-form {
 /* ============================================================
    VIDSNATCH V5 — CLEAN PRODUCT UI
    ============================================================ */
-:root{
-  --v5-nav-h:64px;
-  --v5-max:1600px;
+:root {
+  --v5-nav-h: 64px;
+  --v5-max: 1600px;
 }
 
-html,body{max-width:100%;}
-body{overflow-x:hidden;}
+html,
+body {
+  max-width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
 
 /* Shared navbar: identical footprint on every page. */
-.site-header.vs-shared-header{
-  position:sticky !important; top:10px !important; z-index:1000 !important;
-  width:min(var(--v5-max),calc(100% - 32px)) !important;
-  height:var(--v5-nav-h) !important; min-height:var(--v5-nav-h) !important;
-  margin:10px auto 0 !important; border:1px solid var(--border) !important;
-  border-radius:20px !important; background:color-mix(in srgb,var(--bg) 92%,transparent) !important;
-  box-shadow:0 8px 24px rgba(80,65,15,.08) !important;
-  overflow:visible !important;
+.site-header.vs-shared-header {
+  position: sticky !important;
+  top: 10px !important;
+  z-index: 1000 !important;
+  width: min(var(--v5-max), calc(100% - 32px)) !important;
+  height: var(--v5-nav-h) !important;
+  min-height: var(--v5-nav-h) !important;
+  margin: 10px auto 0 !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 20px !important;
+  background: color-mix(in srgb, var(--bg) 92%, transparent) !important;
+  box-shadow: 0 8px 24px rgba(80, 65, 15, 0.08) !important;
+  overflow: visible !important;
 }
-.site-header.vs-shared-header .navbar{
-  height:100% !important; min-height:100% !important; width:100% !important;
-  display:flex !important; align-items:center !important; gap:10px !important;
-  padding:7px 10px !important; overflow:visible !important; direction:ltr !important;
+.site-header.vs-shared-header .navbar {
+  height: 100% !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 7px 10px !important;
+  overflow: visible !important;
+  direction: ltr !important;
 }
-.site-header.vs-shared-header .brand{
-  flex:0 0 auto !important; display:inline-flex !important; align-items:center !important;
-  gap:7px !important; font-size:1.12rem !important; font-weight:800 !important;
-  white-space:nowrap !important; letter-spacing:-.45px !important;
+.site-header.vs-shared-header .brand {
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  font-size: 1.12rem !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  letter-spacing: -0.45px !important;
 }
-.site-header.vs-shared-header .brand .logo-icon{
-  width:40px !important;height:40px !important;border-radius:12px !important;
-  display:inline-flex !important;align-items:center !important;justify-content:center !important;
-  background:linear-gradient(135deg,#ffe54f,#f5c900) !important;color:#3a2e00 !important;
-  box-shadow:0 4px 10px rgba(180,140,0,.16) !important;
+.site-header.vs-shared-header .brand .logo-icon {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #ffe54f, #f5c900) !important;
+  color: #3a2e00 !important;
+  box-shadow: 0 4px 10px rgba(180, 140, 0, 0.16) !important;
 }
-.site-header.vs-shared-header .nav-platforms{
-  flex:1 1 auto !important; min-width:0 !important; display:flex !important;
-  align-items:center !important; justify-content:space-between !important; gap:2px !important;
-  overflow:hidden !important; direction:ltr !important;
+.site-header.vs-shared-header .nav-platforms {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 2px !important;
+  overflow: hidden !important;
+  direction: ltr !important;
 }
-.site-header.vs-shared-header .nav-platform{
-  flex:0 1 auto !important; min-width:0 !important; height:38px !important; min-height:38px !important;
-  padding:6px 7px !important; gap:4px !important; border-radius:10px !important;
-  font-size:clamp(.66rem,.68vw,.78rem) !important; font-weight:700 !important;
-  white-space:nowrap !important; box-shadow:none !important; transform:none !important;
+.site-header.vs-shared-header .nav-platform {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  padding: 6px 7px !important;
+  gap: 4px !important;
+  border-radius: 10px !important;
+  font-size: clamp(0.66rem, 0.68vw, 0.78rem) !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
-.site-header.vs-shared-header .nav-platform-icon{font-size:.82rem !important;}
-.site-header.vs-shared-header .nav-platform:hover{background:rgba(249,204,0,.08) !important;}
-.site-header.vs-shared-header .nav-platform.active{background:rgba(249,204,0,.12) !important;box-shadow:none !important;}
-.site-header.vs-shared-header .language-selector{position:relative !important;flex:0 0 auto !important;direction:ltr !important;}
-.site-header.vs-shared-header .language-btn{
-  height:40px !important; min-height:40px !important; max-width:170px !important;
-  padding:7px 11px !important; border-radius:12px !important; font-size:.76rem !important;
-  gap:6px !important; white-space:nowrap !important; box-shadow:none !important;
+.site-header.vs-shared-header .nav-platform-icon {
+  font-size: 0.82rem !important;
 }
-.site-header.vs-shared-header .language-menu{
-  position:absolute !important; top:calc(100% + 8px) !important; right:0 !important; left:auto !important;
-  width:230px !important; max-height:360px !important; overflow:auto !important; z-index:2000 !important;
-  padding:7px !important; border-radius:15px !important; box-shadow:0 18px 40px rgba(0,0,0,.16) !important;
+.site-header.vs-shared-header .nav-platform:hover {
+  background: rgba(249, 204, 0, 0.08) !important;
 }
-.site-header.vs-shared-header .vs-language-option{width:100% !important;text-align:left !important;direction:ltr !important;}
+.site-header.vs-shared-header .nav-platform.active {
+  background: rgba(249, 204, 0, 0.12) !important;
+  box-shadow: none !important;
+}
+.site-header.vs-shared-header .language-selector {
+  position: relative !important;
+  flex: 0 0 auto !important;
+  direction: ltr !important;
+}
+.site-header.vs-shared-header .language-btn {
+  height: 40px !important;
+  min-height: 40px !important;
+  max-width: 170px !important;
+  padding: 7px 11px !important;
+  border-radius: 12px !important;
+  font-size: 0.76rem !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+}
+.site-header.vs-shared-header .language-menu {
+  position: absolute !important;
+  top: calc(100% + 8px) !important;
+  right: 0 !important;
+  left: auto !important;
+  width: 230px !important;
+  max-height: 360px !important;
+  overflow: auto !important;
+  z-index: 2000 !important;
+  padding: 7px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16) !important;
+}
+.site-header.vs-shared-header .vs-language-option {
+  width: 100% !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
 
 /* Theme toggle: compact real switch, centered directly under navbar. */
-.vs-theme-row{
-  height:56px !important; min-height:56px !important; width:100% !important;
-  display:flex !important; align-items:center !important; justify-content:center !important;
-  margin:0 !important; padding:6px !important; pointer-events:none !important;
+.vs-theme-row {
+  height: 56px !important;
+  min-height: 56px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  pointer-events: none !important;
 }
-.vs-theme-toggle{
-  pointer-events:auto !important; height:38px !important; min-height:38px !important;
-  display:inline-flex !important; align-items:center !important; gap:7px !important;
-  padding:4px 7px !important; border:1px solid var(--border) !important; border-radius:999px !important;
-  background:var(--bg-card) !important; color:var(--text) !important; box-shadow:none !important;
+.vs-theme-toggle {
+  pointer-events: auto !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  padding: 4px 7px !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 999px !important;
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
 }
-.vs-theme-icon{width:25px !important;height:25px !important;border-radius:50% !important;display:inline-flex !important;align-items:center !important;justify-content:center !important;background:rgba(249,204,0,.13) !important;font-size:14px !important;}
-.vs-theme-label{font-size:.76rem !important;font-weight:750 !important;min-width:28px !important;}
-.vs-theme-track{position:relative !important;width:42px !important;height:23px !important;flex:0 0 42px !important;border-radius:999px !important;background:rgba(120,100,25,.16) !important;border:1px solid rgba(120,100,25,.16) !important;box-shadow:none !important;}
-.vs-theme-knob{position:absolute !important;top:2px !important;left:2px !important;width:17px !important;height:17px !important;border-radius:50% !important;background:#fff !important;box-shadow:0 1px 3px rgba(0,0,0,.16) !important;transition:transform .22s ease,background .22s ease !important;}
-.vs-theme-knob[data-position="right"]{transform:translateX(19px) !important;}
+.vs-theme-icon {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(249, 204, 0, 0.13) !important;
+  font-size: 14px !important;
+}
+.vs-theme-label {
+  font-size: 0.76rem !important;
+  font-weight: 750 !important;
+  min-width: 28px !important;
+}
+.vs-theme-track {
+  position: relative !important;
+  width: 42px !important;
+  height: 23px !important;
+  flex: 0 0 42px !important;
+  border-radius: 999px !important;
+  background: rgba(120, 100, 25, 0.16) !important;
+  border: 1px solid rgba(120, 100, 25, 0.16) !important;
+  box-shadow: none !important;
+}
+.vs-theme-knob {
+  position: absolute !important;
+  top: 2px !important;
+  left: 2px !important;
+  width: 17px !important;
+  height: 17px !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16) !important;
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease !important;
+}
+.vs-theme-knob[data-position="right"] {
+  transform: translateX(19px) !important;
+}
 
 /* Dedicated downloader URL area: no decorative panel, no URL icon, no white glow. */
-.universal-downloader,.downloader-card,.seo-downloader-card{
-  background:transparent !important; border:0 !important; box-shadow:none !important;
-  backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
+.universal-downloader,
+.downloader-card,
+.seo-downloader-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
-.universal-input-row,.downloader-form,.seo-downloader-form{background:transparent !important;box-shadow:none !important;border:0 !important;}
-.universal-input-wrap,.downloader-input-wrap,.seo-downloader-input-wrap{
-  background:transparent !important; border:1px solid var(--border) !important;
-  box-shadow:none !important; backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
+.universal-input-row,
+.downloader-form,
+.seo-downloader-form {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
 }
-.input-icon,.downloader-input-icon{display:none !important;}
-.universal-input-wrap input,.downloader-input,.seo-downloader-input{
-  background:transparent !important; box-shadow:none !important; border:0 !important;
+.universal-input-wrap,
+.downloader-input-wrap,
+.seo-downloader-input-wrap {
+  background: transparent !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
-.universal-input-wrap:focus-within,.downloader-input-wrap:focus-within,.seo-downloader-input-wrap:focus-within{
-  border-color:rgba(249,204,0,.38) !important; box-shadow:0 0 0 3px rgba(249,204,0,.07) !important;
+.input-icon,
+.downloader-input-icon {
+  display: none !important;
 }
-.clear-input-btn,.downloader-clear{
-  width:32px !important;height:32px !important;min-width:32px !important;padding:0 !important;
-  border-radius:50% !important;background:transparent !important;color:var(--text-muted) !important;
-  box-shadow:none !important;
+.universal-input-wrap input,
+.downloader-input,
+.seo-downloader-input {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
 }
-.clear-input-btn:hover,.downloader-clear:hover{background:rgba(249,204,0,.10) !important;color:var(--text) !important;}
+.universal-input-wrap:focus-within,
+.downloader-input-wrap:focus-within,
+.seo-downloader-input-wrap:focus-within {
+  border-color: rgba(249, 204, 0, 0.38) !important;
+  box-shadow: 0 0 0 3px rgba(249, 204, 0, 0.07) !important;
+}
+.clear-input-btn,
+.downloader-clear {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  box-shadow: none !important;
+}
+.clear-input-btn:hover,
+.downloader-clear:hover {
+  background: rgba(249, 204, 0, 0.1) !important;
+  color: var(--text) !important;
+}
 
 /* Dark mode: absolutely no white/neumorphic highlight shadows. */
-html[data-theme="dark"] *,html.vs-dark-mode *,body.dark-mode *,body.vs-dark-mode *{--shadow-light:transparent !important;}
-html[data-theme="dark"] .site-header.vs-shared-header,body.dark-mode .site-header.vs-shared-header,body.vs-dark-mode .site-header.vs-shared-header{box-shadow:0 8px 24px rgba(0,0,0,.34) !important;}
-html[data-theme="dark"] .vs-theme-toggle,body.dark-mode .vs-theme-toggle,body.vs-dark-mode .vs-theme-toggle{box-shadow:none !important;background:#211f13 !important;}
-html[data-theme="dark"] .vs-theme-knob,body.dark-mode .vs-theme-knob,body.vs-dark-mode .vs-theme-knob{background:#f9cc00 !important;box-shadow:0 1px 3px rgba(0,0,0,.4) !important;}
-html[data-theme="dark"] .language-menu,body.dark-mode .language-menu{box-shadow:0 18px 40px rgba(0,0,0,.55) !important;}
-html[data-theme="dark"] .universal-input-wrap,body.dark-mode .universal-input-wrap,html[data-theme="dark"] .downloader-input-wrap,body.dark-mode .downloader-input-wrap{box-shadow:none !important;background:transparent !important;}
+html[data-theme="dark"] *,
+html.vs-dark-mode *,
+body.dark-mode *,
+body.vs-dark-mode * {
+  --shadow-light: transparent !important;
+}
+html[data-theme="dark"] .site-header.vs-shared-header,
+body.dark-mode .site-header.vs-shared-header,
+body.vs-dark-mode .site-header.vs-shared-header {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.34) !important;
+}
+html[data-theme="dark"] .vs-theme-toggle,
+body.dark-mode .vs-theme-toggle,
+body.vs-dark-mode .vs-theme-toggle {
+  box-shadow: none !important;
+  background: #211f13 !important;
+}
+html[data-theme="dark"] .vs-theme-knob,
+body.dark-mode .vs-theme-knob,
+body.vs-dark-mode .vs-theme-knob {
+  background: #f9cc00 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+}
+html[data-theme="dark"] .language-menu,
+body.dark-mode .language-menu {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55) !important;
+}
+html[data-theme="dark"] .universal-input-wrap,
+body.dark-mode .universal-input-wrap,
+html[data-theme="dark"] .downloader-input-wrap,
+body.dark-mode .downloader-input-wrap {
+  box-shadow: none !important;
+  background: transparent !important;
+}
 
 /* Shared FAQ/footer: same visual component on every page. */
-.vs-shared-faq{margin-top:64px !important;}
-.vs-shared-footer{margin-top:70px !important;}
+.vs-shared-faq {
+  margin-top: 64px !important;
+}
+.vs-shared-footer {
+  margin-top: 70px !important;
+}
 
 /* Stable desktop-to-tablet navbar. */
-@media (max-width:1250px){
-  .site-header.vs-shared-header{width:calc(100% - 20px) !important;}
-  .site-header.vs-shared-header .nav-platform{padding-left:5px !important;padding-right:5px !important;font-size:.64rem !important;}
-  .site-header.vs-shared-header .brand{font-size:1rem !important;}
-  .site-header.vs-shared-header .brand .logo-icon{width:36px !important;height:36px !important;}
+@media (max-width: 1250px) {
+  .site-header.vs-shared-header {
+    width: calc(100% - 20px) !important;
+  }
+  .site-header.vs-shared-header .nav-platform {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    font-size: 0.64rem !important;
+  }
+  .site-header.vs-shared-header .brand {
+    font-size: 1rem !important;
+  }
+  .site-header.vs-shared-header .brand .logo-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
 }
-@media (max-width:900px){
-  .site-header.vs-shared-header{height:auto !important;min-height:60px !important;}
-  .site-header.vs-shared-header .navbar{min-height:60px !important;height:auto !important;flex-wrap:wrap !important;overflow:visible !important;}
-  .site-header.vs-shared-header .brand{order:1 !important;}
-  .site-header.vs-shared-header .language-selector{order:2 !important;margin-left:auto !important;}
-  .site-header.vs-shared-header .nav-platforms{order:3 !important;flex:0 0 100% !important;width:100% !important;overflow-x:auto !important;justify-content:flex-start !important;padding:2px 0 3px !important;scrollbar-width:none !important;}
-  .site-header.vs-shared-header .nav-platforms::-webkit-scrollbar{display:none;}
-  .site-header.vs-shared-header .nav-platform{flex:0 0 auto !important;font-size:.72rem !important;}
-  .site-header.vs-shared-header .language-menu{right:0 !important;max-width:calc(100vw - 28px) !important;}
+@media (max-width: 900px) {
+  .site-header.vs-shared-header {
+    height: auto !important;
+    min-height: 60px !important;
+  }
+  .site-header.vs-shared-header .navbar {
+    min-height: 60px !important;
+    height: auto !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+  }
+  .site-header.vs-shared-header .brand {
+    order: 1 !important;
+  }
+  .site-header.vs-shared-header .language-selector {
+    order: 2 !important;
+    margin-left: auto !important;
+  }
+  .site-header.vs-shared-header .nav-platforms {
+    order: 3 !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    padding: 2px 0 3px !important;
+    scrollbar-width: none !important;
+  }
+  .site-header.vs-shared-header .nav-platforms::-webkit-scrollbar {
+    display: none;
+  }
+  .site-header.vs-shared-header .nav-platform {
+    flex: 0 0 auto !important;
+    font-size: 0.72rem !important;
+  }
+  .site-header.vs-shared-header .language-menu {
+    right: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+  }
 }
-@media (max-width:600px){
-  .site-header.vs-shared-header{width:calc(100% - 10px) !important;border-radius:16px !important;top:5px !important;margin-top:5px !important;}
-  .site-header.vs-shared-header .navbar{padding:7px !important;}
-  .site-header.vs-shared-header .brand span:last-child{display:inline !important;font-size:.95rem !important;}
-  .site-header.vs-shared-header .brand .logo-icon{width:34px !important;height:34px !important;border-radius:10px !important;}
-  .site-header.vs-shared-header .language-btn{max-width:150px !important;height:38px !important;min-height:38px !important;font-size:.70rem !important;}
-  .site-header.vs-shared-header .language-btn #vs-current-language{max-width:78px !important;overflow:hidden !important;text-overflow:ellipsis !important;white-space:nowrap !important;}
-  .vs-theme-row{height:50px !important;min-height:50px !important;}
-  .universal-input-row{flex-direction:column !important;}
-  .universal-input-row .fetch-btn{width:100% !important;}
-  .downloader-form,.seo-downloader-form{flex-direction:column !important;}
-  .downloader-fetch{width:100% !important;}
+@media (max-width: 600px) {
+  .site-header.vs-shared-header {
+    width: calc(100% - 10px) !important;
+    border-radius: 16px !important;
+    top: 5px !important;
+    margin-top: 5px !important;
+  }
+  .site-header.vs-shared-header .navbar {
+    padding: 7px !important;
+  }
+  .site-header.vs-shared-header .brand span:last-child {
+    display: inline !important;
+    font-size: 0.95rem !important;
+  }
+  .site-header.vs-shared-header .brand .logo-icon {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 10px !important;
+  }
+  .site-header.vs-shared-header .language-btn {
+    max-width: 150px !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    font-size: 0.7rem !important;
+  }
+  .site-header.vs-shared-header .language-btn #vs-current-language {
+    max-width: 78px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+  .vs-theme-row {
+    height: 50px !important;
+    min-height: 50px !important;
+  }
+  .universal-input-row {
+    flex-direction: column !important;
+  }
+  .universal-input-row .fetch-btn {
+    width: 100% !important;
+  }
+  .downloader-form,
+  .seo-downloader-form {
+    flex-direction: column !important;
+  }
+  .downloader-fetch {
+    width: 100% !important;
+  }
 }
 
 /* ============================================================
@@ -6143,8 +6409,13 @@ html[data-theme="dark"] .universal-input-wrap,body.dark-mode .universal-input-wr
 
 /* One predictable page shell: footer is outside main and can sit
    naturally at the bottom instead of being pulled into the content. */
-html, body { min-height: 100%; }
-body { min-height: 100vh; }
+html,
+body {
+  min-height: 100%;
+}
+body {
+  min-height: 100vh;
+}
 
 /* Shared navbar is identical on home + every downloader page. */
 .site-header.vs-shared-header {
@@ -6153,7 +6424,7 @@ body { min-height: 100vh; }
   border-radius: 24px !important;
   background: rgba(18, 17, 12, 0.92) !important;
   border-color: rgba(249, 204, 0, 0.14) !important;
-  box-shadow: 0 12px 32px rgba(0,0,0,.18) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18) !important;
   backdrop-filter: blur(18px) !important;
   -webkit-backdrop-filter: blur(18px) !important;
 }
@@ -6162,7 +6433,7 @@ html[data-theme="light"] .site-header.vs-shared-header,
 body[data-theme="light"] .site-header.vs-shared-header {
   background: rgba(245, 238, 204, 0.92) !important;
   border-color: rgba(170, 135, 20, 0.14) !important;
-  box-shadow: 0 10px 28px rgba(112, 91, 20, .10) !important;
+  box-shadow: 0 10px 28px rgba(112, 91, 20, 0.1) !important;
 }
 
 .site-header.vs-shared-header .navbar {
@@ -6178,13 +6449,15 @@ body[data-theme="light"] .site-header.vs-shared-header {
   overflow-x: auto !important;
   scrollbar-width: none !important;
 }
-.site-header.vs-shared-header .nav-platforms::-webkit-scrollbar { display:none !important; }
+.site-header.vs-shared-header .nav-platforms::-webkit-scrollbar {
+  display: none !important;
+}
 
 .site-header.vs-shared-header .nav-platform {
   min-height: 42px !important;
   height: 42px !important;
   padding: 8px 10px !important;
-  font-size: .82rem !important;
+  font-size: 0.82rem !important;
   font-weight: 700 !important;
 }
 
@@ -6215,7 +6488,7 @@ body[data-theme="light"] .site-header.vs-shared-header {
 }
 .site-header.vs-shared-header .vs-theme-label {
   min-width: 28px !important;
-  font-size: .76rem !important;
+  font-size: 0.76rem !important;
 }
 .site-header.vs-shared-header .vs-theme-track {
   width: 40px !important;
@@ -6226,11 +6499,15 @@ body[data-theme="light"] .site-header.vs-shared-header {
   width: 15px !important;
   height: 15px !important;
 }
-.site-header.vs-shared-header .vs-theme-knob[data-position="right"] { transform: translateX(17px) !important; }
+.site-header.vs-shared-header .vs-theme-knob[data-position="right"] {
+  transform: translateX(17px) !important;
+}
 
 /* URL field: clean, flat, no link icon and no bright neumorphic halo. */
 .input-icon,
-.downloader-input-icon { display: none !important; }
+.downloader-input-icon {
+  display: none !important;
+}
 .universal-input-wrap input,
 .downloader-form input,
 .seo-downloader-form input,
@@ -6243,11 +6520,13 @@ body[data-theme="light"] .site-header.vs-shared-header {
 }
 .universal-input-wrap input:hover,
 .downloader-form input:hover,
-.seo-downloader-form input:hover { background: var(--bg-soft) !important; }
+.seo-downloader-form input:hover {
+  background: var(--bg-soft) !important;
+}
 .universal-input-wrap input:focus,
 .downloader-form input:focus,
 .seo-downloader-form input:focus {
-  box-shadow: 0 0 0 3px rgba(249,204,0,.10) !important;
+  box-shadow: 0 0 0 3px rgba(249, 204, 0, 0.1) !important;
 }
 
 /* Dedicated downloader cards should not inherit the old bright light glow. */
@@ -6256,11 +6535,13 @@ body[data-theme="light"] .site-header.vs-shared-header {
 .universal-result,
 .downloader-result,
 .seo-downloader-result {
-  box-shadow: 0 12px 30px rgba(0,0,0,.12) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
 }
 
 /* Shared FAQ/footer: same visual component on every page. */
-.vs-shared-faq { margin-bottom: 72px !important; }
+.vs-shared-faq {
+  margin-bottom: 72px !important;
+}
 .vs-shared-footer {
   width: min(1500px, calc(100% - 48px)) !important;
   margin: 0 auto !important;
@@ -6268,11 +6549,15 @@ body[data-theme="light"] .site-header.vs-shared-header {
   border-top: 1px solid var(--border) !important;
   background: transparent !important;
 }
-.vs-shared-footer .footer-inner { width: min(1180px, 100%) !important; }
+.vs-shared-footer .footer-inner {
+  width: min(1180px, 100%) !important;
+}
 
 /* Desktop: keep the navbar in one consistent row. */
 @media (min-width: 901px) {
-  .site-header.vs-shared-header .nav-platforms { flex: 1 1 auto !important; }
+  .site-header.vs-shared-header .nav-platforms {
+    flex: 1 1 auto !important;
+  }
 }
 
 /* Tablet/mobile: brand + controls on row 1, platform scroller on row 2. */
@@ -6295,8 +6580,12 @@ body[data-theme="light"] .site-header.vs-shared-header {
     overflow-x: auto !important;
     padding: 2px 0 3px !important;
   }
-  .site-header.vs-shared-header .nav-actions { margin-left: auto !important; }
-  .site-header.vs-shared-header .nav-platform { flex: 0 0 auto !important; }
+  .site-header.vs-shared-header .nav-actions {
+    margin-left: auto !important;
+  }
+  .site-header.vs-shared-header .nav-platform {
+    flex: 0 0 auto !important;
+  }
   .site-header.vs-shared-header .language-menu {
     position: fixed !important;
     top: 72px !important;
@@ -6309,13 +6598,30 @@ body[data-theme="light"] .site-header.vs-shared-header {
 }
 
 @media (max-width: 520px) {
-  .site-header.vs-shared-header .brand { font-size: 1.05rem !important; }
-  .site-header.vs-shared-header .brand .logo-icon { width: 36px !important; height: 36px !important; }
-  .site-header.vs-shared-header .vs-theme-label { display: none !important; }
-  .site-header.vs-shared-header .vs-theme-toggle { padding-right: 6px !important; }
-  .site-header.vs-shared-header .language-btn { min-height: 40px !important; height: 40px !important; }
-  .site-header.vs-shared-header .language-btn #vs-current-language { display: inline !important; }
-  .vs-shared-footer { width: calc(100% - 24px) !important; padding: 45px 14px 52px !important; }
+  .site-header.vs-shared-header .brand {
+    font-size: 1.05rem !important;
+  }
+  .site-header.vs-shared-header .brand .logo-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .site-header.vs-shared-header .vs-theme-label {
+    display: none !important;
+  }
+  .site-header.vs-shared-header .vs-theme-toggle {
+    padding-right: 6px !important;
+  }
+  .site-header.vs-shared-header .language-btn {
+    min-height: 40px !important;
+    height: 40px !important;
+  }
+  .site-header.vs-shared-header .language-btn #vs-current-language {
+    display: inline !important;
+  }
+  .vs-shared-footer {
+    width: calc(100% - 24px) !important;
+    padding: 45px 14px 52px !important;
+  }
 }
 
 /* Dark mode must override old light neumorphism everywhere relevant. */
@@ -6327,7 +6633,7 @@ html[data-theme="dark"] .seo-downloader-form input,
 body[data-theme="dark"] .seo-downloader-form input {
   background: #17160f !important;
   color: #fff4b8 !important;
-  border-color: rgba(249,204,0,.16) !important;
+  border-color: rgba(249, 204, 0, 0.16) !important;
   box-shadow: none !important;
 }
 
@@ -6422,8 +6728,8 @@ body:not(.dark-mode):not(.vs-dark-mode) {
   --text: #3a2e00;
   --text-soft: #6f5c20;
   --text-muted: #9a8547;
-  --shadow-dark: rgba(120, 95, 20, 0.10);
-  --shadow-light: rgba(255,255,255,0.55);
+  --shadow-dark: rgba(120, 95, 20, 0.1);
+  --shadow-light: rgba(255, 255, 255, 0.55);
 }
 
 /* ============================================================
@@ -6440,8 +6746,8 @@ body.vs-dark-mode {
   --text: #f7f0c9 !important;
   --text-soft: #d2c78e !important;
   --text-muted: #9b9160 !important;
-  --border: rgba(249,204,0,0.13) !important;
-  --shadow-dark: rgba(0,0,0,0.34) !important;
+  --border: rgba(249, 204, 0, 0.13) !important;
+  --shadow-dark: rgba(0, 0, 0, 0.34) !important;
   --shadow-light: transparent !important;
 }
 
@@ -6451,7 +6757,11 @@ body.dark-mode,
 body.vs-dark-mode {
   background: #0d0d0b !important;
   background-image:
-    radial-gradient(circle at 50% -10%, rgba(249,204,0,0.055), transparent 34%),
+    radial-gradient(
+      circle at 50% -10%,
+      rgba(249, 204, 0, 0.055),
+      transparent 34%
+    ),
     linear-gradient(180deg, #0d0d0b 0%, #10100d 100%) !important;
 }
 
@@ -6509,8 +6819,8 @@ html.vs-dark-mode .seo-downloader-result,
 body.dark-mode .seo-downloader-result,
 body.vs-dark-mode .seo-downloader-result {
   background: #151511 !important;
-  border-color: rgba(249,204,0,0.12) !important;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.30) !important;
+  border-color: rgba(249, 204, 0, 0.12) !important;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* ============================================================
@@ -6548,8 +6858,6 @@ body.vs-dark-mode .seo-downloader-result {
   }
 }
 
-
-
 /* Final night-mode fix: remove only the decorative glow/gradient behind the URL field. */
 html[data-theme="dark"] .downloader-card::before,
 html.vs-dark-mode .downloader-card::before,
@@ -6558,7 +6866,6 @@ body.vs-dark-mode .downloader-card::before {
   background: none !important;
   box-shadow: none !important;
 }
-
 
 /* Final DAY MODE fix: remove the unwanted shadow/halo below the URL field only. */
 html[data-theme="light"] .downloader-card,
@@ -6616,7 +6923,7 @@ html.vs-dark-mode .result-platform,
 body.dark-mode .result-platform,
 body.vs-dark-mode .result-platform {
   color: #d9b92f !important;
-  background: rgba(255, 205, 35, 0.10) !important;
+  background: rgba(255, 205, 35, 0.1) !important;
   box-shadow: none !important;
 }
 
@@ -6626,7 +6933,7 @@ body.dark-mode .result-meta span,
 body.vs-dark-mode .result-meta span {
   color: #d9cfaa !important;
   background: #24241f !important;
-  border-color: rgba(255, 215, 75, 0.10) !important;
+  border-color: rgba(255, 215, 75, 0.1) !important;
   box-shadow: none !important;
 }
 
@@ -6647,7 +6954,7 @@ body.dark-mode .format-btn,
 body.vs-dark-mode .format-btn {
   color: #e4dcc0 !important;
   background: #24241f !important;
-  border-color: rgba(255, 215, 75, 0.10) !important;
+  border-color: rgba(255, 215, 75, 0.1) !important;
   box-shadow: none !important;
 }
 
@@ -6666,14 +6973,14 @@ body.dark-mode .format-btn.active,
 body.vs-dark-mode .format-btn.active {
   color: #392c00 !important;
   background: linear-gradient(135deg, #f9d63d, #e9ad00) !important;
-  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.30) !important;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
 html[data-theme="dark"] .download-btn,
 html.vs-dark-mode .download-btn,
 body.dark-mode .download-btn,
 body.vs-dark-mode .download-btn {
-  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.30) !important;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
 html[data-theme="dark"] .audio-btn,
@@ -6682,7 +6989,7 @@ body.dark-mode .audio-btn,
 body.vs-dark-mode .audio-btn {
   color: #e4dcc0 !important;
   background: #24241f !important;
-  border-color: rgba(255, 215, 75, 0.10) !important;
+  border-color: rgba(255, 215, 75, 0.1) !important;
   box-shadow: none !important;
 }
 
@@ -6694,4 +7001,12 @@ body.vs-dark-mode .audio-btn:hover {
   background: #2b2a23 !important;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.28) !important;
 }
-
+.hilltop-banner {
+  width: 100%;
+  max-width: 300px;
+  min-height: 250px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
