@@ -1,0 +1,27 @@
+{
+  "name": "vidsnatch-vercel",
+  "private": true,
+  "version": "10.0.0",
+  "description": "VidSnatch Vite frontend and Vercel Node.js API with universal download visibility and shared SVG favicon.",
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace frontend",
+    "build": "node scripts/prepare-youtube-pot.mjs && npm run build --workspace frontend",
+    "preview": "npm run preview --workspace frontend"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "dependencies": {
+    "cors": "2.8.6",
+    "express": "5.2.1",
+    "ffmpeg-static": "5.3.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.10.1"
+  }
+}
