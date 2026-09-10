@@ -173,24 +173,25 @@
          2. site-ui.js
          3. main.js
          ========================================================= -->
-  
+
     <!-- Shared site UI + home downloader scripts. Keep this order. -->
     <script src="/translations.js"></script>
     <script src="/site-ui.js"></script>
+    <script src="/hilltopads.js"></script>
     <script type="module" src="/src/main.js"></script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "VidSnatch",
-      "item": "https://vidsnatch.fun/"
-    }
-  ]
-}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "VidSnatch",
+            "item": "https://vidsnatch.fun/"
+          }
+        ]
+      }
     </script>
   </head>
 
@@ -240,7 +241,7 @@
           <div class="universal-downloader">
             <div class="universal-input-row">
               <div class="universal-input-wrap">
-<input
+                <input
                   id="universal-url-input"
                   type="url"
                   autocomplete="off"
