@@ -10,16 +10,25 @@
 
     <title>YouTube Video Downloader | VidSnatch</title>
 
-    <meta name="description" content="Download YouTube videos quickly and easily with VidSnatch. Paste a supported YouTube video URL and choose an available video or audio format." />
+    <meta
+      name="description"
+      content="Download YouTube videos quickly and easily with VidSnatch. Paste a supported YouTube video URL and choose an available video or audio format."
+    />
 
-    <meta name="keywords" content="YouTube Video Downloader, VidSnatch, video downloader, online video downloader, MP4 downloader, free video downloader" />
+    <meta
+      name="keywords"
+      content="YouTube Video Downloader, VidSnatch, video downloader, online video downloader, MP4 downloader, free video downloader"
+    />
 
     <meta name="author" content="VidSnatch" />
 
     <meta name="theme-color" content="#0d0d0b" />
 
     <meta property="og:image" content="https://vidsnatch.fun/og-image.png" />
-    <meta property="og:image:alt" content="VidSnatch YouTube Video Downloader" />
+    <meta
+      property="og:image:alt"
+      content="VidSnatch YouTube Video Downloader"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -40,9 +49,15 @@
 
     <meta property="og:title" content="YouTube Video Downloader | VidSnatch" />
 
-    <meta property="og:description" content="Download YouTube videos quickly and easily with VidSnatch. Paste a supported YouTube video URL and choose an available video or audio format." />
+    <meta
+      property="og:description"
+      content="Download YouTube videos quickly and easily with VidSnatch. Paste a supported YouTube video URL and choose an available video or audio format."
+    />
 
-    <meta property="og:url" content="https://vidsnatch.fun/youtube-video-downloader/" />
+    <meta
+      property="og:url"
+      content="https://vidsnatch.fun/youtube-video-downloader/"
+    />
 
     <meta property="og:site_name" content="VidSnatch" />
 
@@ -54,7 +69,10 @@
 
     <meta name="twitter:title" content="YouTube Video Downloader | VidSnatch" />
 
-    <meta name="twitter:description" content="Download YouTube videos quickly and easily with VidSnatch. Paste a supported YouTube video URL and choose an available video or audio format." />
+    <meta
+      name="twitter:description"
+      content="Download YouTube videos quickly and easily with VidSnatch. Paste a supported YouTube video URL and choose an available video or audio format."
+    />
 
     <!-- ========================================================
        Preconnect
@@ -72,7 +90,7 @@
     <!-- ========================================================
        Shared Downloader CSS
        ======================================================== -->
-<!-- ========================================================
+    <!-- ========================================================
        Favicon
        ======================================================== -->
 
@@ -136,31 +154,32 @@
         ]
       }
     </script>
-  
+
     <!-- Shared site UI + downloader scripts. Keep this order. -->
     <script src="/translations.js"></script>
     <script src="/site-ui.js"></script>
     <script src="/downloader.js"></script>
-  
+    <script src="/hilltopads.js"></script>
+
     <script type="application/ld+json">
-{
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-            {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "VidSnatch",
-                  "item": "https://vidsnatch.fun/"
-            },
-            {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "YouTube Video Downloader",
-                  "item": "https://vidsnatch.fun/youtube-video-downloader/"
-            }
-      ]
-}
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "VidSnatch",
+            "item": "https://vidsnatch.fun/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "YouTube Video Downloader",
+            "item": "https://vidsnatch.fun/youtube-video-downloader/"
+          }
+        ]
+      }
     </script>
   </head>
 
@@ -203,7 +222,7 @@
         <section class="downloader-card" aria-label="YouTube video downloader">
           <form class="downloader-form" id="downloader-form" autocomplete="off">
             <div class="downloader-input-wrap">
-<input
+              <input
                 id="video-url"
                 class="downloader-input"
                 type="url"
@@ -422,16 +441,16 @@
             error message.
           </p>
         </section>
-</div>
+      </div>
     </main>
 
     <!-- ========================================================
        SHARED TRANSLATIONS
        ======================================================== -->
-<!-- ========================================================
+    <!-- ========================================================
        SHARED DOWNLOADER ENGINE
        ======================================================== -->
-<!-- ========================================================
+    <!-- ========================================================
        PAGE INITIALIZATION
        ======================================================== -->
 
